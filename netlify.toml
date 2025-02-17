@@ -1,5 +1,5 @@
 [build]
-  command = "npm install --force && npm run build"
+  command = "npm uninstall @mui/styles && npm install --force && npm run build"
   publish = "build"  # Change this to your actual build output folder, e.g., "build" for React
 
 [build.environment]
