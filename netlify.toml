@@ -1,0 +1,11 @@
+[build]
+  command = "npm install --legacy-peer-deps && npm run build"
+  publish = "build"  # Change this to your actual build output folder, e.g., "build" for React
+
+[build.environment]
+  NODE_VERSION = "18.20.6"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
